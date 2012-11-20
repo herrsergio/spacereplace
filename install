@@ -1,0 +1,20 @@
+#!/bin/bash
+# spacereplace v1.0.1 - a script to change spaces into underscores. Script by Richard van Kampen, july 2005
+#
+echo ""
+echo "spacereplace v1.0.1"
+echo ""
+echo "This script changes all spaces in file and directory names with underscores. Very handy to get rid of spaces in file names in your collection of downloaded P2P files"
+echo ""
+echo "You need to install 'spacereplace' as root"
+echo "Please type the root password and press [ENTER]:"
+sudo chmod 554 $PWD/spacereplace
+sudo cp -b -f $PWD/spacereplace /usr/local/bin
+sudo chown $USER /usr/local/bin/spacereplace
+echo ""
+echo "**********************************************************************"
+echo ""
+echo "The spacereplace script is now installed in /usr/local/bin"
+echo "To run the script, type 'spacereplace {-r} [DIR]' in your console"
+echo "'For more info, type 'spacereplace --help' in your console"
+echo "**********************************************************************"
